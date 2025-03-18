@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Sal</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="content">
+        <img src="sal1.png" alt="" id="sal">
+        <img src="sal1.png" alt="" id="sal1">
+        <img src="sal2.png" alt="" id="sal2">
+    </div>
+
+
+    <script type="text/javascript">
+        // Parallax Sal
+        let sal = document.getElementById("sal")
+        let sal1 = document.getElementById("sal1")
+        let sal2 = document.getElementById("sal2")
+
+        window.addEventListener('scroll', function(){
+            var value = window.scrollY;
+
+            sal.style.top = value * 0.7 + 'px';
+            sal1.style.top = value * 0.5 + 'px';
+            sal2.style.top = -value * 0.35 + 'px';
+        })
+
+        // final Parallax Sal
+    </script>
+
+</body>
+</html>
