@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de animação com Sprite</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="animation"></div>
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="jquery.animateSprite.js"></script>
+
+
+    <script>
+        /* global $ */
+        var currentFps = 12;
+        
+        var animationSettingsLebre = {
+            fps: currentFps,
+            loop: true,
+            autoplay: true,    
+        };
+                
+        $('.animation').animateSprite(animationSettingsLebre);        
+    </script>
+
+</body>
+</html>
